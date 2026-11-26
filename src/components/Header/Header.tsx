@@ -1,14 +1,17 @@
+import logo from '@img/logo.svg'
+import user from '@avatars/user-3.svg'
+ 
 export function Header() {
   return (
     <header className="header">
       <div className="container header__inner">
         <a className="logo" href="main.html" aria-label="Шесть городов - на главную">
-          <img className="logo__mark" src="src/img/logo.svg" width="32" height="32" alt="" />
+          <img className="logo__mark" src={logo} width="32" height="32" alt="" />
           <span className="logo__text">six<span>cities</span></span>
         </a>
         <nav className="user-nav" aria-label="Пользователь">
           <a className="user-nav__link" href="favorites.html">
-            <img className="user-nav__avatar" src="src/img/avatars/user-3.svg" width="32" height="32" alt="" />
+            <img className="user-nav__avatar" src={user} width="32" height="32" alt="" />
             <span className="user-nav__email">oliver.conner@gmail.com</span>
             <span className="user-nav__count" aria-label="В избранном: 3">3</span>
           </a>
